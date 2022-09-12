@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button {
+        @apply bg-stone-800 !important;
+        @apply rounded !important;
+        @apply font-black !important;
+    }
+}
+
+@layer utilities {
+    .btn {
+        cursor: url("@/assets/pointer.png"), pointer; 
+        height: 3.15rem;
+        width: 9.75rem;
+    }
+}
