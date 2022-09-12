@@ -1,19 +1,9 @@
 <template>
-  <div class="font-barlow">
-
-    <UsersPanel />
-
-    <div class="mb-6">
+  <div class="absolute z-[100]">
       <Header />
-    </div>
-
-    <div>
-      <div class="channels">
-        <HomePage />
-      </div>
-    </div>
-
   </div>
+      <HomePage />
 </template>
+
 <script lang="ts" src="./App.ts"></script>
 <style lang="css" src="./App.css"></style>

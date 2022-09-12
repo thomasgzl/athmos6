@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { store } from './store'
-import filters from './filters';
+import { Plugin } from 'vue-responsive-video-background-player'
 
 import dayjs from 'dayjs';
 import 'dayjs/locale/fr';
@@ -13,7 +12,6 @@ dayjs.extend(duration);
 
 import '@/index.css'
 
-const app = createApp(App).use(store)
-app.config.globalProperties.$filters = filters;
+const app = createApp(App).use(Plugin)
 
 app.mount('#app')

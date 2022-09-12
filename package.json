@@ -8,6 +8,7 @@
     "plop": "plop"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "dayjs": "^1.10.7",
     "graphql": "^16.2.0",
     "graphql-request": "^3.7.0",
@@ -16,6 +17,7 @@
     "tiny-emitter": "^2.1.0",
     "vue": "^3.2.27",
     "vue-loader": "^17.0.0",
+    "vue-responsive-video-background-player": "^2.2.3",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'barlow': ['"Barlow Semi Condensed"', 'cursive']
+        'display': ['Oswald'],
+        'body': ['"Open Sans"'],
       },
       spacing: {
         '6': '6rem',

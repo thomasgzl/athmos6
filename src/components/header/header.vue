@@ -1,5 +1,5 @@
 <template>
-  <div class="flex sticky top-0 h-20 bg-red-600 mb-5">
+  <div class="flex sticky top-0 h-10 bg-transparent">
     Logo + menu HEADER
   </div>
 </template>

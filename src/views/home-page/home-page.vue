@@ -1,7 +1,5 @@
 <template>
-  <div class="bg-stone-700">
-    HOME
-  </div>
+    <HomeLogo />
 </template>
 
 <script lang="ts" src="./home-page.ts"></script>

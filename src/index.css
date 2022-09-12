@@ -10,10 +10,4 @@
     }
 }
 
-@layer utilities {
-    .btn {
-        cursor: url("@/assets/pointer.png"), pointer; 
-        height: 3.15rem;
-        width: 9.75rem;
-    }
-}
+@layer utilities {}

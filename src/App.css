@@ -1,22 +1,12 @@
-html, body {
-    background-color:#1b1b1b;
+html, body, #app {
     scrollbar-width: thin;
     scrollbar-color: blue orange;
     overflow-x: hidden;
-  }
-  
-  #app {
-    color: #ebebeb;
-  }
-  .channels {
-    width: 16%;
-    float: left;
-    z-index: 6;
+    width: 100vw;
+    height: 100vh;
   }
 
-  .messages {
-    z-index: -1;
-  }
+
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 9px;
@@ -33,5 +23,5 @@ html, body {
 }
 
 * { 
-  cursor: url("@/assets/cursor.png"), auto;
+  cursor: url("@/assets/crosshair.svg"), auto;
 }

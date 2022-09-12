@@ -1,40 +1,16 @@
-import { defineComponent } from 'vue';
-import { gql } from 'graphql-request';
-import { graphQLClient } from '@/gql-client';
+import { defineComponent, defineAsyncComponent } from 'vue';
+
+const HomeLogo = defineAsyncComponent(() => import(/* webpackChunkName: "components_home-logo" */
+  '@/components/home-logo/home-logo.vue'));
 
 export default defineComponent({
   name: 'HomePage',
-  components: {},
+  components: { HomeLogo },
   props: {},
-  data() { 
-    return {
-      channels: [] as any[]
-    }; 
-  },
+  data() { return {} },
   computed: {},
   created: function() {},
-  mounted: function() { this.getChannels() },
+  mounted: function() {},
   beforeUnmount: function() { /* clean all non-Vue listeners/objects */ },
-  methods: {
-    async getChannels() {
-      const query = gql`
-      {
-        channel {
-          id
-          name
-        }
-      }
-    `
-    
-      const data = await graphQLClient.request(query)
-      if (data) {
-        this.channels = data.channel
-      }
-    },
-
-    isChannel(chan: string) {
-      this.$store.commit('channelId', chan)
-    }
-
-  }
+  methods: {}
 });
